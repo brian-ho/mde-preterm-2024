@@ -40,6 +40,7 @@ function loadTableData(table) {
 
 function preload() {
   table = loadTable("data/trace.csv", "csv", "header", loadTableData);
+  img = loadImage("data/robot.png");
 }
 
 function setup() {
@@ -68,7 +69,9 @@ function draw() {
 
   // Marker
   fill(255, 0, 0);
+  imageMode(CENTER);
   circle(currentPosition.x, currentPosition.y, 20);
+  image(img, currentPosition.x, currentPosition.y - 50, 64, 64);
 
   // Label
   noStroke();
