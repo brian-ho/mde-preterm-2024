@@ -25,11 +25,9 @@ Learning to find, explore, and analyze data.
 Exploring how to create, interact with, and iterate on information design.
 
 - [End-to-End Demo](https://editor.p5js.org/brian-ho/full/kJkdAW7-G)
-- [Tutorial](https://editor.p5js.org/brian-ho/sketches/w9bzqLkBW)
+- [Tutorial 1](https://editor.p5js.org/brian-ho/sketches/w9bzqLkBW)
+- [Tutorial 2](https://editor.p5js.org/brian-ho/sketches/hZNWvlsGb)
 
 ### Day 3 - Outputs
 
 Presenting, collaborating, and engaging.
-
-[1]:
-[1]:
