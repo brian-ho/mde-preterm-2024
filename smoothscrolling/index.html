@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>Your site title</title>
+
+    <style type="text/css">
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            font-size: 1.5em;
+        }
+        .container {
+            height: 100%;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+        }
+        .slide {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+        }
+        nav {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('nav a');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    document.getElementById(targetId).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <nav>
+        <a href="#slide1">1</a>
+        <a href="#slide2">2</a>
+        <a href="#slide3">3</a>
+        <a href="#slide4">4</a>
+    </nav>
+    <div class="container">
+        <div class="slide" id="slide1">Slide 1</div>
+        <div class="slide" id="slide2">Slide 2</div>
+        <div class="slide" id="slide3">Slide 3</div>
+        <div class="slide" id="slide4">Slide 4</div>
+    </div>
+</body>
+</html>
